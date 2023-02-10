@@ -6,3 +6,6 @@ OR replacement_cost = 28.99 AND rental_rate = 0.99;
 4-SELECT * FROM customer WHERE first_name ='Mary';
 Answer:Smith
 5-SELECT * FROM film WHERE NOT rental_rate = 2.99 AND NOT rental_rate = 4.99 AND NOT length > 50
+-- veya
+SELECT * FROM film 
+WHERE NOT (rental_rate = 2.99 OR rental_rate = 4.99 OR length > 50);
